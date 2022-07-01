@@ -19,7 +19,24 @@
     </header>
 
     <main>
+      <form>
 
+        <fieldset class="cadastro">
+          <legend>Cadastro de produtos</legend>
+
+          <label for="nome-produto">Nome do produto</label>
+          <input type="text" id="nome-produto" name="nome-produto" required>
+
+          <label for="quantidade-produto">Quantidade</label>
+          <input type="number" name="quantidade-produto" id="quantidade-produto" required>
+
+          <label for="valor-produto">Valor</label>
+          <input type="number" step="0.01" name="valor-produto" id="valor-produto" required>
+
+          <button>Salvar produto</button>
+
+        </fieldset>
+      </form>
     </main>
 
     <footer>
