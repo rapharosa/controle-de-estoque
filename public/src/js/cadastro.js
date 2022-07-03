@@ -12,11 +12,12 @@ form.addEventListener('submit', (event) => {
     }
     console.log(novoProduto)
     produtos.add(novoProduto).then((docRef) => {
-        form.reset()
+        form.reset();
         alert(`Cadastro do produto ${novoProduto.nome} ocorreu com sucesso!`)
+        console.log("Document written with ID: ", docRef.id);
     })
     .catch((error) => {
         alert(`Cadastro do produto ${novoProduto.nome} não pode ser concluido!`)
-        console.log('Error adding document')
+        console.log('Error adding document', error)
     })
 })
